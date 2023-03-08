@@ -1,23 +1,66 @@
 body {
-    background-image: url(images/repeatwallmaybe.jpg);
-    /* background-repeat: no-repeat; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+
+    background-image: url(images/forest1.1.png);
     background-size: cover;
     background-color: black;
-    color: aqua;
-
+    color: rgb(171, 253, 253);
+    
+    
 }
-#header {
+a {
+    color: aqua;
+    margin: 2px;
+}
+img {
+    border-radius: 5%;
+}
+#header, nav, #main, #footer {
     display: flex;
     margin: 2%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .6);
+    border:  black double 5px;
+    border-radius: 10px;
+    
+}
+#header {
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, .5);
+    align-items: center;
+}
+#main {
+    flex: 1;
+    flex-direction: column;
+    
+    justify-content: space-between;
+    height: 100vh;
+    
+}
+
+
+nav {
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer {
+    flex-shrink: 0;
 }
 #bluemag {
     max-width: 100px;
+    margin: 1%;
 }
 
 #boomaclaw {
-    width: 350px;
+    max-width: 150px;
+    max-height: 150px;
+    align-self: flex-end;
+    
     
 }
 
