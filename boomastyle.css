@@ -20,14 +20,17 @@ a {
 img {
     border-radius: 5%;
 }
-#header, nav, #main, #footer {
+#header, #navContainer, #main, #footer, #welcomemsg {
     display: flex;
     margin: 2%;
-    padding: 10px;
     background-color: rgba(0, 0, 0, .6);
     border:  black double 5px;
     border-radius: 10px;
     
+}
+#welcomemsg {
+    max-width: 70%;
+    height: auto;
 }
 #header {
     justify-content: space-between;
@@ -36,16 +39,30 @@ img {
 #main {
     flex: 1;
     flex-direction: column;
-    
     justify-content: space-between;
     height: 100vh;
+}
+#redria {
+    width: 43px;
+    height: 49px;
+}
+#navContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+#navContainer a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
-
-
-nav {
-    align-items: center;
-    justify-content: space-between;
+#login, #calc, #register, #dressingRoom {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 10px;
+    padding: 0px;
+    justify-content: space-evenly;
 }
 
 #footer {
@@ -66,5 +83,6 @@ nav {
 
 .boomaright, .boomaleft {
     max-width: fit-content;
-    max-height: 175px;
+    max-height: 140px;
+    
 }
