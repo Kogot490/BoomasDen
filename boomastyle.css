@@ -1,4 +1,27 @@
 body {
+    background-image: url(images/repeatwallmaybe.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
     background-color: black;
     color: aqua;
+
+}
+#header {
+    display: flex;
+    margin: 2%;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, .5);
+}
+#bluemag {
+    max-width: 100px;
+}
+
+#boomaclaw {
+    width: 350px;
+    
+}
+
+.boomaright, .boomaleft {
+    max-width: fit-content;
+    max-height: 175px;
 }
